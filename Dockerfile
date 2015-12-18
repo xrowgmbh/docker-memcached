@@ -6,7 +6,7 @@
 
 FROM centos:centos7
 
-MAINTAINER The CentOS Project <cloud-ops@centos.org>
+MAINTAINER Björn Dieding <bjoern@xrow.de>
 
 ENV container=docker
 
