@@ -12,7 +12,7 @@ ENV container=docker
 
 RUN  yum -y update; yum clean all
 RUN yum -y install epel-release; yum clean all
-RUN yum -y install memcached; yum clean all
+RUN yum -y install memcached telnet; yum clean all
 
 EXPOSE  11211
 
