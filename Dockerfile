@@ -10,9 +10,10 @@ MAINTAINER Björn Dieding <bjoern@xrow.de>
 
 ENV container=docker
 
-RUN  yum -y update; yum clean all
+RUN yum -y update; yum clean all
 RUN yum -y install epel-release; yum clean all
 RUN yum -y install memcached telnet; yum clean all
+ADD memcache-top /usr/bin/memcache-top
 
 EXPOSE  11211
 
